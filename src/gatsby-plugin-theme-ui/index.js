@@ -9,7 +9,7 @@ export default {
   },
   fonts: {
     body:
-      '"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      '"Comic Sans MS", "Helvetica Neue", Helvetica, Arial, sans-serif',
   },
   sizes: {
     maxWidth: '1050px',
