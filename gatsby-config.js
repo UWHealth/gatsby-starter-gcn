@@ -17,10 +17,10 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'GCN',
+    title: 'UW Health Marketing Tech Dev',
     description:
-      'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
-    siteUrl: 'https://gcn.netlify.com',
+      'You are the future, and the future has not happened yet.',
+    siteUrl: 'https://www.uwhealth.dev',
     image: '/images/share.jpg',
     menuLinks: [
       {
