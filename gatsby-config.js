@@ -5,6 +5,7 @@ try {
   contentfulConfig = {
     production: {
       spaceId: process.env.SPACE_ID,
+      host: process.env.CONTENTFUL_HOST,
       accessToken: process.env.ACCESS_TOKEN,
     },
   }
