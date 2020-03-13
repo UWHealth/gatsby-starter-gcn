@@ -31,6 +31,7 @@
     "inquirer": "^7.0.4",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "npx": "^10.2.2",
     "path": "^0.12.7",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
@@ -51,7 +52,7 @@
     "test": "yarn run lint:css && yarn run lint:js && yarn run check-pretty",
     "setup": "node ./bin/setup.js",
     "lint:js": "eslint --ext .js,.jsx .",
-    "lint:css": "stylelint 'src/**/*.js'",
+    "lint:css": "stylelint \"src/**/*.js\"",
     "check-pretty": "prettier --list-different {,src/**/}*.{js,jsx,json,css,scss}",
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "gatsby clean"
