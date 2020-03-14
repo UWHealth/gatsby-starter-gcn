@@ -68,9 +68,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options:
-        process.env.NODE_ENV === 'development'
-          ? contentfulConfig.development
-          : contentfulConfig.production,
+        contentfulConfig.production,
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
