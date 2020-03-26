@@ -16,10 +16,11 @@ module.exports = async ({ graphql, actions }) => {
     const prev = i === 0 ? null : posts[i - 1].node
 
     createPage({
-      path: `${basePath === '/' ? '' : basePath}/${post.node.slug}/`,
+      path: `${basePath === '/' ? '' : basePath}/${post.node.slug}-${post.node.contentful_id}/`,
       component: path.resolve(`./src/templates/post.js`),
       context: {
         slug: post.node.slug,
+        contentful_id: post.node.contentful_id,
         basePath: basePath === '/' ? '' : basePath,
         prev,
         next,
@@ -70,7 +71,7 @@ module.exports = async ({ graphql, actions }) => {
   const pages = pagesQuery.data.allContentfulPage.edges
   pages.forEach((page, i) => {
     createPage({
-      path: `/${page.node.slug}/`,
+      path: `/${page.node.slug}`,
       component: path.resolve(`./src/templates/page.js`),
       context: {
         slug: page.node.slug,

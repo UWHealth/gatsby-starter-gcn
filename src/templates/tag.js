@@ -67,6 +67,7 @@ export const query = graphql`
         id
         title
         slug
+        contentful_id
         publishDate(formatString: "MMMM DD, YYYY")
         publishDateISO: publishDate(formatString: "YYYY-MM-DD")
         heroImage {

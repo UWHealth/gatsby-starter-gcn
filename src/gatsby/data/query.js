@@ -5,6 +5,7 @@ module.exports.data = {
         node {
           slug
           publishDate
+          contentful_id
         }
       }
     }
