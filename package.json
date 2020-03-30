@@ -33,6 +33,7 @@
     "inquirer": "^7.1.0",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "netlify-plugin-debug-cache": "^1.0.1",
     "netlify-plugin-gatsby-cache": "^0.2.1",
     "npx": "^10.2.2",
     "path": "^0.12.7",
